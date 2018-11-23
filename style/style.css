@@ -41,3 +41,26 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/****** SECTION ACHATS *****/
+
+#achats {
+	background-color: #7e7e7e;
+	padding: 10px;
+}
+
+.accessoires {
+    border: 1px solid #8e8e8e;
+	border-radius: 8px;
+	width: 150px;
+	height: 150px;
+}
+
+#achat_accessoires {
+	float: right;
+}
+
+img#pixel4 {
+	border: 1px solid #8e8e8e;
+	border-radius: 8px;
+}

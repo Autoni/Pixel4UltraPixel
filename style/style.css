@@ -42,25 +42,89 @@ table {
 	border-spacing: 0;
 }
 
-/****** SECTION ACHATS *****/
+/****** SECTION ACHATS ******/
 
 #achats {
 	background-color: #7e7e7e;
-	padding: 10px;
+	padding: 100px;
 }
 
-.accessoires {
-    border: 1px solid #8e8e8e;
-	border-radius: 8px;
-	width: 150px;
-	height: 150px;
-}
-
-#achat_accessoires {
-	float: right;
-}
-
-img#pixel4 {
+#achat_accessoires img {
 	border: 1px solid #8e8e8e;
 	border-radius: 8px;
+	background-color: white;
+	width: 200px;
+	height: 200px;
+}
+
+#acc1 {
+	padding: 5px;
+	position: absolute;
+	top: 100px;
+	left: 1000px;
+	right: 100px;
+}
+
+#acc2 {
+	padding: 5px;
+	position: absolute;
+	top: 100px;
+	left: 1350px;
+	right: 100px;
+}
+
+#acc3 {
+	padding: 5px;
+	position: absolute;
+	top: 380px;
+	left: 1000px;
+	right: 100px;
+}
+
+#acc4 {
+	padding: 5px;
+	position: absolute;
+	top: 380px;
+	left: 1350px;
+	right: 100px;
+}
+
+#plus {
+	padding: 5px;
+	position: absolute;
+	top: 600px;
+	left: 1260px;
+}
+
+#pixel4 {
+	border: 1px solid #8e8e8e;
+	border-radius: 8px;
+	background-color: white;
+}
+
+.pixel4 {
+	position: relative;
+	left: 100px;
+}
+
+/* Opacité */
+div img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+img#pixel4:hover {
+	opacity: .7;
+}
+img#acc1:hover  {
+	opacity: .7;
+}
+img#acc2:hover {
+	opacity: .7;
+}
+img#acc3:hover {
+	opacity: .7;
+}
+img#acc4:hover {
+	opacity: .7;
 }

@@ -43,14 +43,14 @@ table {
 }
 
 /****** SECTION ACHATS ******/
-.pixel4 {
-	position: relative;
-	left: 10%;
-}
-
 #achats {
 	background-color: #7e7e7e;
 	padding: 100px 0px;
+}
+
+.pixel4 {
+	position: relative;
+	left: 10%;
 }
 
 #achat_accessoires img {
@@ -92,19 +92,30 @@ table {
 #plus {
 	padding: 5px;
 	position: absolute;
+	top: 77%;
+	right: 25%;
 }
 
 #acheter {
+	padding: 5px;
 	position: absolute;
-	top: 100%;
-	left: 50%;
+	top: 77%;
+	left: 23.6%;
 }
 
 #pixel4 {
 	border: 1px solid #8e8e8e;
 	border-radius: 8px;
 	background-color: white;
+	max-width: 500px;
+	height: auto;
 }
+
+@media screen and (max-width: 1400px) {
+	#pixel4 .acc {
+	  width: 100%;
+	}
+  }
 
 /* Opacité */
 div img {

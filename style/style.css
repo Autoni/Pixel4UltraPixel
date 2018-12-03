@@ -41,3 +41,21 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/**
+/* Section présentation
+**/
+
+.presentation-img{
+	height: 100vh;
+	display: block;
+	background-image: url("../assets/presentationImg.jpg");
+	background-size: cover;
+	background-position: center;
+	object-fit: cover;
+}
+
+.whats-new{
+	display:block;
+	height: 3000px;
+}

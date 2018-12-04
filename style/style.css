@@ -47,15 +47,12 @@ table {
 **/
 
 .presentation-img{
-	top : 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
+	height: 100vh;
 	display: block;
 	background-image: url("../assets/presentationImg.jpg");
-	/*background-size: cover;
-	object-fit: cover;*/
-	background-position: center center;
+	background-size: cover;
+	background-position: center;
+	object-fit: cover;
 	transform-origin : center center;
 }
 

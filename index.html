@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="robots" content="none" />
@@ -22,6 +23,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 </head>
+
 <body>
     <header>
 
@@ -38,24 +40,46 @@
     <section id="achats">
         <div>
             <div id="achat_pixel4">
-                <img class="pixel4" id="pixel4" alt="Pixel 4 Ultra Pixel" src="assets/pixel3_test.png" />
                 <a href="https://store.google.com/fr/config/pixel_3" target="_blank">
-                    <input id="acheter" type="button" name="acheter" value="Acheter"/>
+                    <img class="pixel4" id="pixel4" alt="Pixel 4 Ultra Pixel" src="assets/pixel3_test.png"/>
+                </a>
+                <a href="https://store.google.com/fr/config/pixel_3" target="_blank">
+                    <input id="acheter_pixel4" type="button" name="acheter" value="Acheter"/>
                 </a>
             </div>
             <div id="achat_accessoires">
-                <img class="acc" id="acc1" alt="Google Pixel Buds" src="assets/ecouteursSF_test.png" />
-                <img class="acc" id="acc2" alt="Ecouteurs USB-C Google Pixel" src="assets/ecouteursF_test.png" />
-                <img class="acc" id="acc3" alt="Etui Pixel 4" src="assets/coquePixel3_test.png" />
-                <img class="acc" id="acc4" alt="Google Pixel Stand" src="assets/pixelStand_test.png" />
+                <a href="https://store.google.com/product/google_pixel_buds" target="_blank">
+                    <img class="acc" id="acc1" alt="Google Pixel Buds" src="assets/ecouteursSF_test.png"/>
+                </a>
+                <a href="https://store.google.com/product/usb_c_earbuds" target="_blank">
+                    <img class="acc" id="acc2" alt="Ecouteurs USB-C Google Pixel" src="assets/ecouteursF_test.png" />
+                </a>
+                <a href="https://store.google.com/product/pixel_3_case_fabric" target="_blank">
+                    <img class="acc" id="acc3" alt="Etui Pixel 4" src="assets/coquePixel3_test.png"/>
+                </a>
+                <a href="https://store.google.com/product/pixel_stand" target="_blank">
+                    <img class="acc" id="acc4" alt="Google Pixel Stand" src="assets/pixelStand_test.png"/>
+                </a>
                 <a href="https://store.google.com/fr/collection/accessories_wall" target="_blank">
-                    <input id="plus" type="button" name="plus" value="Plus.."/>
+                    <input id="plus" type="button" name="plus" value="Plus d'accesoires"/>
                 </a>
             </div>
         </div>
     </section>
     <footer>
-
+        <div id="outils">
+            <br>
+            <hr>
+            <img class="livraison" alt="livraison" src="assets/livraison.png"/>
+            <p class="livraison" id="text">Livraison</p>
+            <img class="financement" alt="livraison" src="assets/financement.png"/>
+            <p class="financement" id="text">Financement</p>
+            <img class="recyclage" alt="livraison" src="assets/recyclage.png"/>
+            <p class="recyclage" id="text">Recyclage / Ecologie</p>
+            <img class="magasins" alt="livraison" src="assets/magasins.png"/>
+            <p class="magasins" id="text">Magasins / Partenaires</p>
+        </div>
     </footer>
 </body>
+
 </html>

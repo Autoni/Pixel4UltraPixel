@@ -42,7 +42,71 @@ table {
 	border-spacing: 0;
 }
 
-/****** SECTION ACHATS ******/
+// ==========================================
+// SECTION PRESENTATION
+// ==========================================
+
+#presentation {
+    width:100%;
+    background:#f2f2f2;
+}
+
+#presentation p {
+    font-size:19px;
+    font-weight:300;
+    line-height:1.5em;
+    margin-bottom:1em;
+}
+
+.image-container {
+	position: relative;
+    height: 100vh;
+	display: block;
+	object-fit: cover;
+	transform-origin : center center;
+}
+
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+ 
+}
+
+.image-container img.active {
+    z-index:2;
+}
+
+/*.presentation-img{
+	height: 100vh;
+	display: block;
+	background-image: url("../assets/presentationImg.jpg");
+	background-size: cover;
+	background-position: center;
+	object-fit: cover;
+	transform-origin : center center;
+}
+
+.presentation-pixel-img{
+	height: 100vh;
+	display: block;
+	background-image: url("../assets/pixelPresentation.png");
+	background-size: cover;
+	background-position: center;
+	object-fit: cover;
+	transform-origin : center center;
+}
+
+.whats-new{
+	display:block;
+	height: 3000px;
+}*/
+
+// ==========================================
+// SECTION ACHATS
+// ==========================================
+
 #achats {
 	background-color: #7e7e7e;
 	padding: 100px;
@@ -131,8 +195,9 @@ table {
 	box-shadow: 0 2px 10px 0 rgba(0,0,0,0.30);
 }
 
-/****** FOOTER ********/
-
+// ==========================================
+// FOOTER
+// ==========================================
 .livraison {
 	font-family: 'Roboto', sans-serif;
 	position: absolute;
@@ -182,7 +247,10 @@ p {
 	line-height: 24px;
 }
 
-/********* MEDIA QUERIES *************/
+// ==========================================
+// MEDIA QUERIES
+// ==========================================
+
 @media only screen and (max-width: 1000px) {
 	.mention {
 		float: left;

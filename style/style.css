@@ -42,11 +42,43 @@ table {
 	border-spacing: 0;
 }
 
-/**
-/* Section présentation
-**/
+// ==========================================
+// SECTION PRESENTATION
+// ==========================================
 
-.presentation-img{
+#presentation {
+    width:100%;
+    background:#f2f2f2;
+}
+
+#presentation p {
+    font-size:19px;
+    font-weight:300;
+    line-height:1.5em;
+    margin-bottom:1em;
+}
+
+.image-container {
+	position: relative;
+    height: 100vh;
+	display: block;
+	object-fit: cover;
+	transform-origin : center center;
+}
+
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+ 
+}
+
+.image-container img.active {
+    z-index:2;
+}
+
+/*.presentation-img{
 	height: 100vh;
 	display: block;
 	background-image: url("../assets/presentationImg.jpg");
@@ -56,7 +88,230 @@ table {
 	transform-origin : center center;
 }
 
+.presentation-pixel-img{
+	height: 100vh;
+	display: block;
+	background-image: url("../assets/pixelPresentation.png");
+	background-size: cover;
+	background-position: center;
+	object-fit: cover;
+	transform-origin : center center;
+}
+
 .whats-new{
 	display:block;
 	height: 3000px;
+}*/
+
+// ==========================================
+// SECTION ACHATS
+// ==========================================
+
+#achats {
+	background-color: #7e7e7e;
+	padding: 100px;
+}
+
+#pixel4 {
+	border: 1px solid #8e8e8e;
+	border-radius: 8px;
+	background-color: white;
+	width: 500px;
+	height: 500px;
+	position: relative;
+	top: 10%;
+	left: 4%;
+}
+
+#achat_accessoires img {
+	border: 1px solid #8e8e8e;
+	border-radius: 8px;
+	background-color: white;
+	width: 200px;
+	height: 200px;
+}
+
+#acc1 {
+	padding: 5px;
+	position: absolute;
+	top: 14%;
+	left: 57%;
+}
+
+#acc2 {
+	padding: 5px;
+	position: absolute;
+	top: 14%;
+	right: 10%;
+}
+
+#acc3 {
+	padding: 5px;
+	position: absolute;
+	top: 53.7%;
+	left: 57%;
+}
+
+#acc4 {
+	padding: 5px;
+	position: absolute;
+	top: 53.7%;
+	right: 10%;
+}
+
+#plus {
+	position: absolute;
+	padding: 5px;
+	top: 85%;
+	right: 22.10%;
+	width: 130px;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: none;
+	background: #538CF7;
+	box-shadow: 0 2px 10px 0 rgba(0,0,0,0.15);
+	font-family: 'Roboto', sans-serif;
+}
+#plus:hover {
+	box-shadow: 0 2px 10px 0 rgba(0,0,0,0.30);
+}
+
+#acheter_pixel4 {
+	position: absolute;
+	padding: 5px;
+	top: 85%;
+	left: 22.10%;
+	width: 130px;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: none;
+	background: #538CF7;
+	box-shadow: 0 2px 10px 0 rgba(0,0,0,0.15);
+	font-family: 'Roboto', sans-serif;
+}
+#acheter_pixel4:hover {
+	box-shadow: 0 2px 10px 0 rgba(0,0,0,0.30);
+}
+
+// ==========================================
+// FOOTER
+// ==========================================
+.livraison {
+	font-family: 'Roboto', sans-serif;
+	position: absolute;
+	left: 10%;
+	top: 120%;
+}
+
+.financement {
+	font-family: 'Roboto', sans-serif;
+	position: absolute;
+	left: 33%;
+	top: 120%;
+}
+
+.recyclage {
+	font-family: 'Roboto', sans-serif;
+	position: absolute;
+	right: 33%;
+	top: 120%;
+}
+
+.magasins {
+	font-family: 'Roboto', sans-serif;
+	position: absolute;
+	right: 10%;
+	top: 120%;
+}
+
+#text {
+	top: 140%;
+	margin: 0 0 20px 20px;
+}
+
+p {
+	color: #727276;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.mentions {
+	margin: 45px;
+}
+
+.body-text {
+	line-height: 24px;
+}
+
+// ==========================================
+// MEDIA QUERIES
+// ==========================================
+
+@media only screen and (max-width: 1000px) {
+	.mention {
+		float: left;
+	}
+}
+
+@media only screen and (max-width: 1000px){
+	#achat_pixel4 img {
+		width: 90%;
+		height: 100%;
+	}
+
+	#acheter_pixel4 {
+		top: 85%;
+		left: 25%;
+		padding: 5px;
+		width: 130px;
+		height: 90%;
+	}
+
+	#plus {
+		top: 85%;
+		right: 25%;
+		padding: 5px;
+		width: 130px;
+		height: 90%;
+	}
+
+	#achat_accessoires {
+		padding: 5px;
+		width: 130px;
+		height: 90%;
+	}
+}
+
+/*@media only screen and (max-width: 1000px){
+	#achats div#achat_accessoires:nth-of-type(2) img:nth-child(n){
+		display: block;
+		width: auto;
+		height: auto;
+	}
+}*/
+
+/* Opacité */
+div img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+img#pixel4:hover {
+	opacity: .7;
+}
+img#acc1:hover  {
+	opacity: .7;
+}
+img#acc2:hover {
+	opacity: .7;
+}
+img#acc3:hover {
+	opacity: .7;
+}
+img#acc4:hover {
+	opacity: .7;
 }

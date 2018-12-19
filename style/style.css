@@ -78,7 +78,7 @@ li[class="nav"]
 }
 a[class="lien_nav"]
 {
-	line-height:40px;
+	line-height: 40px;
 	text-decoration:none;
 	display:block;
 	text-align:center;
@@ -347,4 +347,9 @@ div[id="testrespo"]
 	
 	}
 
+	a[class="lien_nav"]
+	{
+	line-height: 140px;
+    font-size: 35px;
+	}
 }

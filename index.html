@@ -18,22 +18,8 @@
         <meta name="twitter:title" content="Google Pixel 4 - Capturez le monde - Google Store" />
         <meta name="twitter:description" content="Le Pixel 4 et le Pixel 4 XL offrent tout ce que vous attendez d'un téléphone : un appareil photo hors pair, une autonomie d'une journée entière et l'Assistant Google accessible d'une simple pression. De plus, Google Photos vous permet de bénéficier d'un espace de stockage en ligne gratuit et illimité pour toutes vos photos." />
         <meta name="twitter:image" content="" /><!-- IMAGE A COMPLETER-->
-        <link rel="stylesheet" href="style/style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-        <script type="text/javascript" src="js/ScrollMagic.min.js"></script>
-        <script type="text/javascript" src="js/plugins/animation.gsap.min.js"></script>
-        <script type="text/javascript" src="js/plugins/debug.addIndicators.min.js"></script>
-        <script type="text/javascript" src="js/scroll-camera.js"></script> <!-- a modifier quand MERGE !!!!!!!-->
-        <script type="text/javascript" src="js/stickynav.js"></script> <!-- a modifier quand MERGE !!!!!!!-->
-        <script type="text/javascript" src="js/smoothscroll.js"></script> <!-- a modifier quand MERGE !!!!!!!-->
-        <script type="text/javascript" src="js/slider.js"></script> <!-- a modifier quand MERGE !!!!!!!-->
-        <script type="text/javascript" src="js/responsiveMenu.js"></script> <!-- a modifier quand MERGE !!!!!!!-->
-        <script type="text/javascript" src="js/videoscroll.js"></script> <!-- a modifier quand MERGE !!!!!!!-->
-        <script type="text/javascript" src="js/stickyAcheter.js"></script> <!-- a modifier quand MERGE !!!!!!!-->
-        <script src="js/plugins/SudoSlider/js/jquery.sudoSlider.min.js"></script> <!-- a modifier quand MERGE !!!!!!!-->
-
+        <link rel="stylesheet" href="style/style.css">
       </head>
 <body>
     <header>
@@ -41,7 +27,7 @@
             <h1><a id="backAccueil" href="#video">Google Pixel 4</a></h1>
             <nav class="role-menu"> 
                   <ul class="navigation">
-                    <li class="nav"><a class="lien_nav" href="#presentation"> Nouveautés </a></li>
+                    <li class="nav"><a class="lien_nav" href="#presentation"> Présentation </a></li>
                     <li class="nav"><a class="lien_nav" href="#photo"> Photos </a></li> 
                     <li class="nav"><a class="lien_nav" href="#caracteristiques"> Caractéristiques</a></li>
                     <li class="nav"><a class="lien_nav" href="#achats"> Accessoires</a></li> 
@@ -66,14 +52,16 @@
                 <img class="fadeIn" src="assets/pixelPresentationVideBlanc.png" />
             </div>
             <div id="trigger"></div>
-            
+            <div class="description">
+            <h2>Capture the world *</h2>
+                <p>Le nouvel écran du Pixel 4 remet en question les frontières du virtuel et du réel. Grâce à des bordures plus fines que jamais, vous
+                    pourrez revivre vos photos ou vos vidéos comme si vous y êtiez. </p>
+            </div>
             <div class="container whats-new">
-                <h1>Capture the world *</h1>
-                <p>Le nouvel écran du Pixel 4 remet en question les frontières du virtuel et du réel. Vous pouvez visionner des photos et des vidéos
-                    ou jouer à des jeux comme si vous y êtiez. </p>
+                <h2>Nouveautés</h2>
+
             </div>
         </div>
-        
     </section>
      <section id="photo">
         <div id="ligne1">
@@ -91,6 +79,11 @@
                     <p class="role-cam">Zoom haute résolution</p>
                 </div>
         </div>
+        <div class="description">
+                <h2>Le meilleur photophone à ce jour</h2>
+                    <p>Le Pixel 4 est équipé de 2 objectifs, donc un téléobjectif à grand angle pour une meilleure gestion de la profondeur. Notre IA 
+                        très sophistiquée améliore vos photos pour un rendu inégalé.</p>
+                </div>
         <div id="slider">
             <div id="contenu" >
                 <ul>
@@ -105,7 +98,30 @@
         </div> 
     </section>
     <section id="caracteristiques">
-
+        <div class="description">
+            <h2>Caractéristiques</h2>
+            <p>Embarquant la version d'Android la plus récente ainsi qu'un hardware de nouvelle génération, Le Pixel 4 propose une expérience utilisateur
+                inédite.
+            </p>
+        </div>
+        <div id="ligne-carac">
+            <div class="liste-nom-carac">
+                <p class="nom-carac" id="os"> OS </p>
+                <p class="nom-carac" id="processeur">Processeur </p>
+                <p class="nom-carac" id="ecran"> Ecran </p>
+                <p class="nom-carac" id="resolution"> Résolution </p>
+                <p class="nom-carac" id="Ram"> RAM </p>
+                <p class="nom-carac" id="app-photo"> Appareils photo</p>
+            </div>
+            <div class="display-carac">
+                <p class="role-carac" info="os"> Android Q </p>
+                <p class="role-carac" info="processeur">Qualcomm® Snapdragon™ 855</p>
+                <p class="role-carac" info="ecran"> 5.8 pouces OLED ratio écran/boitier = 96% </p>
+                <p class="role-carac" info="resolution"> 1620 x 3440 (format 19.5:9) </p>
+                <p class="role-carac" info="Ram"> 8 Go </p>
+                <p class="role-carac" info="app-photo"> 14Mpx ƒ/1,4 + 14Mpx ƒ/2,2 (arrière) 10Mpx ƒ/1,8 + 10Mpx ƒ/2,2 (avant)</p>
+            </div>
+        </div>
     </section>
     <!--<section id="achats">
         <div>
@@ -194,6 +210,20 @@
         </div>
     </footer>-->
 
-    <script src="js/presentation.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script type="text/javascript" src="js/ScrollMagic.min.js"></script>
+    <script type="text/javascript" src="js/plugins/animation.gsap.min.js"></script>
+    <script type="text/javascript" src="js/plugins/debug.addIndicators.min.js"></script>
+    <script type="text/javascript" src="js/scroll-camera.js"></script>
+    <script type="text/javascript" src="js/stickynav.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/responsiveMenu.js"></script>
+    <script type="text/javascript" src="js/videoscroll.js"></script>
+    <script type="text/javascript" src="js/stickyAcheter.js"></script>
+    <script type="text/javascript" src="js/plugins/SudoSlider/js/jquery.sudoSlider.min.js"></script>
+    <script type="text/javascript" src="js/presentation.js"></script>
+    <script type="text/javascript" src="js/displayCarac.js"></script>
 </body>
 </html>

@@ -57,9 +57,9 @@ $(document).ready(function(){
 	var controller = new ScrollMagic.Controller();
 
 	// build scene
-	var scene = new ScrollMagic.Scene({triggerElement: "#trigger_cam", duration: 400})
+	var scene = new ScrollMagic.Scene({triggerElement: "#trigger_cam", duration: 550})
 					.setTween(tween)
-					//.addIndicators() // add indicators (requires plugin)
+					.addIndicators() // add indicators (requires plugin)
 					.addTo(controller);
 
 	// handle form change

@@ -22,13 +22,42 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-        <script src="js/ScrollMagic.min.js"></script>
-        <script src="js/plugins/animation.gsap.min.js"></script>
-        <script src="js/plugins/debug.addIndicators.min.js"></script>
+        <script type="text/javascript" src="js/ScrollMagic.min.js"></script>
+        <script type="text/javascript" src="js/plugins/animation.gsap.min.js"></script>
+        <script type="text/javascript" src="js/plugins/debug.addIndicators.min.js"></script>
+        <script type="text/javascript" src="js/scroll-camera.js"></script> <!-- a modifier quand MERGE !!!!!!!-->
+        <script type="text/javascript" src="js/stickynav.js"></script> <!-- a modifier quand MERGE !!!!!!!-->
+        <script type="text/javascript" src="js/smoothscroll.js"></script> <!-- a modifier quand MERGE !!!!!!!-->
+        <script type="text/javascript" src="js/slider.js"></script> <!-- a modifier quand MERGE !!!!!!!-->
+        <script type="text/javascript" src="js/responsiveMenu.js"></script> <!-- a modifier quand MERGE !!!!!!!-->
+        <script type="text/javascript" src="js/videoscroll.js"></script> <!-- a modifier quand MERGE !!!!!!!-->
+        <script type="text/javascript" src="js/stickyAcheter.js"></script> <!-- a modifier quand MERGE !!!!!!!-->
+        <script src="js/plugins/SudoSlider/js/jquery.sudoSlider.min.js"></script> <!-- a modifier quand MERGE !!!!!!!-->
+
       </head>
 <body>
     <header>
-
+        <div id="barrenav">
+            <h1><a id="backAccueil" href="#video">Google Pixel 4</a></h1>
+            <nav class="role-menu"> 
+                  <ul class="navigation">
+                    <li class="nav"><a class="lien_nav" href="#presentation"> Nouveautés </a></li>
+                    <li class="nav"><a class="lien_nav" href="#photo"> Photos </a></li> 
+                    <li class="nav"><a class="lien_nav" href="#caracteristiques"> Caractéristiques</a></li>
+                    <li class="nav"><a class="lien_nav" href="#achats"> Accessoires</a></li> 
+                 </ul> 
+            </nav>
+            <div id="testrespo"><img src="assets/icon-menu.png" id="menu-burger"></div> 
+             <div class="container-button"><a href="https://store.google.com/product/pixel_3" target="_blank"> <input type="button" id="acheter" value="Acheter"> </a>  </div> 
+        </div>
+    
+        <div id="video">
+            <video playsinline muted id="vid-pixel4" autoplay="true">
+                    <source src="assets/Presentation/pixel4_pres2.mp4" type="video/mp4"> 
+                    <source src="pixel4.ogg" type="video/ogg">
+            </video>
+            <p id="catchphrase"> Découvrez le Pixel 4</p>
+        </div>
     </header>
     <section id="presentation">
         <div class="container new-screen">
@@ -79,17 +108,123 @@
         </div>
         
     </section>
-    <section id="photo">
-
+     <section id="photo">
+        <div id="ligne1">
+                <div id="decomp">
+                <div id="trigger_cam"></div>
+                <img  id="img_camera" src="assets/Photos/Série d_images APN/camera20000.jpg"> 
+                <!--     <video playsinline muted id="vid-cam">
+                    <source src="assets/Photos/camera2.mp4" type="video/mp4">>
+                    <source src="pixel4.ogg" type="video/ogg">
+                </video> -->
+                </div>
+                <div id="text-cam">
+                    <p class="role-cam">Caméras nouvelle génération</p>
+                    <p class="role-cam">Amélioration IA pour des photos parfaites</p>
+                    <p class="role-cam">Zoom haute résolution</p>
+                </div>
+        </div>
+        <div id="slider">
+            <div id="contenu" >
+                <ul>
+                     <li><img class="slide" src="assets/imgslider/img1.jpg" alt="paysage"/> <p class="author">By Tom Grimbert</p></li>
+                     <li><img class="slide" src="assets/imgslider/img2.jpg" alt="montagne"/><p class="author">By Sebastian Boring</p></li>
+                     <li><img class="slide" src="assets/imgslider/img3.jpg" alt="architecture texture"/><p class="author">By Nkululeko Jonas</p></li>
+                     <li><img class="slide" src="assets/imgslider/img4.jpg" alt="architecture"/><p class="author" style="color:#000000;">By Mattew Hamilton</p></li> 
+                     <li><img class="slide" src="assets/imgslider/img5.jpg" alt="renard"/><p class="author">By Olivia Spink</p></li>
+                     <li><img class="slide" src="assets/imgslider/img6.jpg" alt="peinture"/><p class="author">By Steve Johnson</p></li>
+                </ul>
+             </div>
+        </div> 
     </section>
     <section id="caracteristiques">
 
     </section>
     <section id="achats">
-
+        <div>
+            <div id="achat_pixel4">
+                <a href="https://store.google.com/fr/config/pixel_3" target="_blank">
+                    <img class="pixel4" id="pixel4" alt="Pixel 4 Ultra Pixel" src="assets/pixel3_test.png" />
+                </a>
+                <a href="https://store.google.com/fr/config/pixel_3" target="_blank">
+                    <input id="acheter_pixel4" type="button" name="acheter" value="Acheter" />
+                </a>
+            </div>
+            <div id="achat_accessoires">
+                <a href="https://store.google.com/product/google_pixel_buds" target="_blank">
+                    <img class="acc" id="acc1" alt="Google Pixel Buds" src="assets/ecouteursSF_test.png" />
+                </a>
+                <a href="https://store.google.com/product/usb_c_earbuds" target="_blank">
+                    <img class="acc" id="acc2" alt="Ecouteurs USB-C Google Pixel" src="assets/ecouteursF_test.png" />
+                </a>
+                <a href="https://store.google.com/product/pixel_3_case_fabric" target="_blank">
+                    <img class="acc" id="acc3" alt="Etui Pixel 4" src="assets/coquePixel3_test.png" />
+                </a>
+                <a href="https://store.google.com/product/pixel_stand" target="_blank">
+                    <img class="acc" id="acc4" alt="Google Pixel Stand" src="assets/pixelStand_test.png" />
+                </a>
+                <a href="https://store.google.com/fr/collection/accessories_wall" target="_blank">
+                    <input id="plus" type="button" name="plus" value="Plus d'accesoires" />
+                </a>
+            </div>
+        </div>
     </section>
     <footer>
+        <div id="outils">
+            <br>
+            <img class="livraison" alt="livraison" src="assets/livraison.png" />
+            <p class="livraison" id="text">Livraison</p>
+            <img class="financement" alt="livraison" src="assets/financement.png" />
+            <p class="financement" id="text">Financement</p>
+            <img class="recyclage" alt="livraison" src="assets/recyclage.png" />
+            <p class="recyclage" id="text">Ecologique</p>
+            <img class="magasins" alt="livraison" src="assets/magasins.png" />
+            <p class="magasins" id="text">Magasins / Partenaires</p>
+        </div>
 
+        <div class="mentions">
+            <p class="body-text">
+                <span>¹Pour découvrir les langues dans lesquelles Google Lens est disponible, rendez-vous sur
+                    g.co/help/lens. Une connexion Internet est requise.</span>
+            </p><br>
+
+            <p class="body-text">
+                <span>²Vous disposez d'un espace de stockage en ligne illimité en qualité d'origine pour conserver
+                    toutes vos photos et vidéos importées dans Google Photos depuis votre Pixel 4 jusqu'au 31 janvier
+                    2025. Les photos et vidéos importées avant cette date seront conservées dans leur qualité
+                    d'origine. Compte Google requis. Des frais de données peuvent s'appliquer. En savoir plus :
+                    g.co/help/photostorage.</span>
+            </p><br>
+
+            <p class="body-text">
+                <span>³Autonomie approximative pour une utilisation comprenant des périodes d'appels, d'utilisation des
+                    données mobiles, de veille et d'accès à d'autres fonctionnalités, et avec les fonctionnalités de
+                    l'écran actif en permanence et du point d'accès mobile désactivées, conformément à un profil
+                    d'utilisateur établi par Google. La batterie peut se décharger plus rapidement en fonction de la
+                    consommation de données ou de la durée pendant laquelle l'écran est allumé. Les vitesses de
+                    rechargement indiquées supposent l'utilisation du chargeur inclus. Les résultats réels peuvent
+                    varier.</span>
+            </p><br>
+
+            <p class="body-text">
+                <span>⁴Pixel Stand vendu séparément. Charge jusqu'à 10 W pour le Pixel 4.</span>
+            </p><br>
+
+            <p class="body-text">
+                <span>⁵L'Assistant Google nécessite une connexion Internet. Optimisé pour certains services musicaux
+                    uniquement. Des abonnements/paiements peuvent être requis. Pour contrôler certains appareils et
+                    certaines fonctionnalités dans votre maison, vous aurez besoin d'un appareil connecté compatible.</span>
+            </p><br>
+
+            <p class="body-text">
+                <span>† La livraison gratuite (associée au coût le plus bas) peut être interrompue ou modifiée à tout
+                    moment. <a href="https://support.google.com/store/answer/6380752?p=free_shipping&hl=fr&visit_id=636808253734738026-1825663788&rd=1#free_shipping" target="_blank">En savoir plus</a></span>
+            </p><br>
+
+            <p class="body-text">
+                <span>Nos remerciements à "<a href="https://twitter.com/CConceptCreator" target="_blank">Concept Creator</a>"" pour sa vidéo et ses contenus sur ce concept de téléphone.</span>
+            </p>
+        </div>
     </footer>
 
     <script src="js/presentation.js"></script>

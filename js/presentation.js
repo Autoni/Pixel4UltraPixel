@@ -4,12 +4,11 @@ var tween = TweenMax.to(".presentation-img", 1,
         {
                 //immediateRender : true,
                 //ease : Circ.easeOut,
-                //scale : 0.8,
+                scale : 0.5,
                 //opacity: 0,
-                //width : "80%",
-                /*onUpdate : function(){
-                        $(".presentation-img").css("background-image", url(images[obj.curImg]));
-                }*/
+                onUpdate : function(){
+                        //$(".presentation-img").css("background-image", url(images[obj.curImg]));
+                }
         }
 );
 

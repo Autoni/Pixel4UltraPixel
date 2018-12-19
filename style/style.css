@@ -46,7 +46,39 @@ table {
 /* Section présentation
 **/
 
-.presentation-img{
+#presentation {
+    width:100%;
+    background:#f2f2f2;
+}
+
+#presentation p {
+    font-size:19px;
+    font-weight:300;
+    line-height:1.5em;
+    margin-bottom:1em;
+}
+
+.image-container {
+	position: relative;
+    height: 100vh;
+	display: block;
+	object-fit: cover;
+	transform-origin : center center;
+}
+
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+ 
+}
+
+.image-container img.active {
+    z-index:2;
+}
+
+/*.presentation-img{
 	height: 100vh;
 	display: block;
 	background-image: url("../assets/presentationImg.jpg");
@@ -56,7 +88,19 @@ table {
 	transform-origin : center center;
 }
 
+.presentation-pixel-img{
+	height: 100vh;
+	display: block;
+	background-image: url("../assets/pixelPresentation.png");
+	background-size: cover;
+	background-position: center;
+	object-fit: cover;
+	transform-origin : center center;
+}
+
 .whats-new{
 	display:block;
 	height: 3000px;
-}
+}*/
+
+

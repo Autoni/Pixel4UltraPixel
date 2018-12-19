@@ -5,7 +5,7 @@ var tween = TweenMax.staggerTo(".fadeIn", 1, {autoAlpha:1}, 1);
 var controller = new ScrollMagic.Controller();
 
 // build scene
-var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 1200})
+var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: "30%"})
     .setTween(tween)
     .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
